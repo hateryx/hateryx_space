@@ -244,14 +244,14 @@ const Hangman = (props) => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 bg-purple-200 rounded px-1 py-3 font-semibold text-black mb-3 text-xs items-center w-full space-y-2 md:space-y-0">
             <div className="px-5 grid grid-cols-2">
-              <div class="flex items-center space-x-3">
+              <div className="flex items-center space-x-3">
                 <a href={final_content.code_repo_link}>
                   <img
                     src={git_hub}
                     className="object-contain items-center h-10 w-10 hover:border-4 rounded-full border-purple-900"
                   ></img>
                 </a>
-                <p class="text-center">GitHub:</p>
+                <p className="text-center">GitHub:</p>
               </div>
               <div className="px-2 mr-3 font-semibold text-blue-800 flex items-center">
                 <a href={final_content.code_repo_link}>
@@ -260,14 +260,14 @@ const Hangman = (props) => {
               </div>
             </div>
             <div className="px-5 grid grid-cols-2">
-              <div class="flex items-center space-x-3">
+              <div className="flex items-center space-x-3">
                 <a href={final_content.deployed_site}>
                   <img
                     src={final_content.status_icon}
                     className="object-contain items-center h-10 w-10 hover:border-4 rounded-full border-green-800"
                   ></img>
                 </a>
-                <p class="text-left">{final_content.status_key}</p>
+                <p className="text-left">{final_content.status_key}</p>
               </div>
               <div className="px-2 font-semibold text-blue-800 flex items-center">
                 <a href={final_content.deployed_site}>
@@ -282,20 +282,22 @@ const Hangman = (props) => {
           {final_content.tech.map(({ icon_source, lang, details }, index) => (
             <div
               key={index}
-              className="bg-blue-100 rounded px-1 py-2 font-semibold text-black mb-3 text-xs items-center flex w-full space-x-4"
+              className="bg-blue-100 rounded px-1 py-2 font-semibold text-black mb-3 text-xs md:text-sm items-center flex w-full space-x-4"
             >
               <div className="pl-2 md:pl-5 w-2/12">
                 <img
                   src={icon_source}
-                  className="object-contain items-center"
+                  className="object-contain items-center px-2"
                 ></img>
-                <div class="text-center">{lang}</div>
+                <div className="text-center">{lang}</div>
               </div>
 
-              <div className="px-2 w-10/12 mr-3 font-thin leading-relaxed">
+              <div className="px-3 w-10/12 mr-3 font-light leading-tight transition-all duration-300 ease-in-out hover:leading-normal hover:px-2 hover:w-9/12">
                 {" "}
-                {details.split("<x>").map((elem) => (
-                  <p class="py-1">{elem}</p>
+                {details.split("<x>").map((elem, index) => (
+                  <p key={index} className="py-1 md:py-2 text-grey-800">
+                    {elem}
+                  </p>
                 ))}
               </div>
             </div>

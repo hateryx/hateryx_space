@@ -18,6 +18,7 @@ import expressjs from "../assets/images/port-expressjs.svg";
 import api_icon from "../assets/images/port-api.png";
 import lib_icon from "../assets/images/port-lib.png";
 import reportlab from "../assets/images/port-reportlab.png";
+import openCard from "../assets/images/openCard.svg";
 
 import Hangman from "./hangman";
 
@@ -118,7 +119,9 @@ const Portfolio = () => {
                 className="bg-white rounded-t-lg flex items-center px-6 sm:px-6 md:px-0 lg:px-0 xl:px-0 z-8"
               >
                 <div className="w-full max-w-m border-2 shadow-md rounded-lg">
-                  <div className="w-full rounded-t-lg bg-blue-900 h-8"></div>
+                  <div className="w-full rounded-t-lg bg-blue-900 h-10 pl-2 flex items-center">
+                    <img src={openCard} className="h-6 w-6"></img>
+                  </div>
                   <img
                     src={picture}
                     alt="Project 1"

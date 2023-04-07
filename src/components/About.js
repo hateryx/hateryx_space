@@ -15,7 +15,7 @@ const About = () => {
                 About Me
               </p>
             </div>
-            <p className="font-thin py-5 leading-loose">
+            <p className="font-thin py-5 leading-loose text-gray-800">
               Hi, I'm an Audit Data Analytics Lead/ Senior IT Auditor and Full
               Stack Developer enthusiast. Since last year, I've been developing
               applications that could enable businesses to leverage technology.
@@ -24,7 +24,7 @@ const About = () => {
               <strong>Tailwind CSS</strong> and <strong>Python</strong>{" "}
               libraries.{" "}
             </p>
-            <p className="font-thin py-5 leading-loose">
+            <p className="font-thin py-5 leading-loose text-gray-800">
               I started my career as a Certified Public Accountant (CPA) in the
               Philippines, and since then, I've accumulated my business and IT
               acumen, collaboration skills in a large business as internal

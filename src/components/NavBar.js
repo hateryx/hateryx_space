@@ -13,7 +13,7 @@ const NavBar = () => {
   useEffect(() => {
     function scrollHandler() {
       setIsHidden(true);
-      setIsFixed(window.scrollY > 500);
+      setIsFixed(window.scrollY > 250);
 
       if (timeoutId) {
         clearTimeout(timeoutId);
