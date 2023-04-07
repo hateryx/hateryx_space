@@ -1,0 +1,10 @@
+.menu {
+
+    overflow: hidden;
+   
+}
+
+
+.menu.open {
+    display: block;
+}
