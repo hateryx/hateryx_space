@@ -116,7 +116,7 @@ const Careers = () => {
                     {company}
                   </p>
                   <p className="text-base text-gray-500">{location}</p>
-                  <p className="mt-6 text-gray-800 text-lg lg:text-2xl font-thin mr-4 md:mr-20 xl:mr-48">
+                  <p className="mt-6 text-gray-800 text-lg lg:text-2xl font-light mr-4 md:mr-20 xl:mr-48">
                     {description}
                   </p>
                 </div>
@@ -160,7 +160,7 @@ const Careers = () => {
                     return (
                       <p
                         key={index}
-                        className="mt-6 text-gray-800 text-base lg:text-xl font-thin mr-4 md:mr-20 xl:mr-48"
+                        className="mt-6 text-gray-800 text-base lg:text-xl font-light mr-4 md:mr-20 xl:mr-48"
                       >
                         {item}
                       </p>
