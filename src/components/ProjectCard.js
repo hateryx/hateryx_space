@@ -17,15 +17,15 @@ import git_hub from "../assets/images/port-github.svg";
 import golive from "../assets/images/golive.svg";
 import progress from "../assets/images/progress.svg";
 
-const Hangman = (props) => {
+const ProjectCard = (props) => {
   const clickHandler = () => {
-    props.closeHangman();
+    props.closeProjectCard();
   };
 
   useEffect(() => {
     // Scroll to top of page when component is mounted
     setTimeout(() => {
-      document.getElementById("hangman").scrollIntoView({
+      document.getElementById("projectcard").scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "center",
@@ -218,7 +218,7 @@ const Hangman = (props) => {
         onClick={clickHandler}
       ></div>
       <div className="max-w-lg z-50 mx-auto px-8 py-10 bg-white shadow-lg rounded-md sm:max-w-xl relative">
-        <div id="hangman" className="absolute top-0 left-0"></div>
+        <div id="projectcard" className="absolute top-0 left-0"></div>
         <a href="#project" onClick={clickHandler}>
           <SVG_close />
         </a>
@@ -310,4 +310,4 @@ const Hangman = (props) => {
   );
 };
 
-export default Hangman;
+export default ProjectCard;

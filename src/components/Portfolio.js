@@ -20,7 +20,7 @@ import lib_icon from "../assets/images/port-lib.png";
 import reportlab from "../assets/images/port-reportlab.png";
 import openCard from "../assets/images/openCard.svg";
 
-import Hangman from "./hangman";
+import ProjectCard from "./ProjectCard";
 
 const Portfolio = () => {
   const content = [
@@ -72,7 +72,7 @@ const Portfolio = () => {
     },
   ];
 
-  const [showHangman, setShowHangman] = useState(false);
+  const [showProjectCard, setShowProjectCard] = useState(false);
 
   const [pickProject, setPickProject] = useState("");
 
@@ -82,15 +82,15 @@ const Portfolio = () => {
     which_project = event.currentTarget.id;
     setPickProject(which_project);
 
-    openHangman();
+    openProjectCard();
   }
 
-  function openHangman() {
-    setShowHangman(true);
+  function openProjectCard() {
+    setShowProjectCard(true);
   }
 
-  function closeHangman() {
-    setShowHangman(false);
+  function closeProjectCard() {
+    setShowProjectCard(false);
   }
 
   return (
@@ -107,8 +107,11 @@ const Portfolio = () => {
               </p>
             </div>
           </div>
-          {showHangman && (
-            <Hangman closeHangman={closeHangman} which_project={pickProject} />
+          {showProjectCard && (
+            <ProjectCard
+              closeProjectCard={closeProjectCard}
+              which_project={pickProject}
+            />
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 mx-auto content-around items-center">
             {content.map(({ project, picture, description, tech }, index) => (
