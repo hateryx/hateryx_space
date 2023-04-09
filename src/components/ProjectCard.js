@@ -293,10 +293,10 @@ const ProjectCard = (props) => {
               <div className="text-center">{lang}</div>
             </div>
 
-            <div className="px-3 w-10/12 mr-3 font-light leading-tight transition-all duration-300 ease-in-out hover:leading-normal hover:px-2 hover:w-9/12">
+            <div className="px-3 w-10/12 mr-3 font-light leading-tight transition-all duration-100 ease-in-out hover:leading-normal hover:px-2 hover:w-9/12">
               {" "}
               {details.split("<x>").map((elem, index) => (
-                <p key={index} className="py-1 md:py-2 text-grey-800">
+                <p key={index} className="py-1 text-grey-800">
                   {elem}
                 </p>
               ))}
