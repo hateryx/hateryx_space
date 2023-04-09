@@ -1,4 +1,5 @@
 import React from "react";
+import { CheckSVG } from "../assets/icons";
 
 const Careers = () => {
   const contents = [
@@ -31,10 +32,14 @@ const Careers = () => {
 
   const education = [
     {
-      course: "Computer Science with Python Programming",
+      course: "Computer Science for Python Programming",
       school: "Harvard X",
-      type: "Professional Certificate",
-      period: "January to March 2023",
+      type: "Professional Certificates",
+      cs50x:
+        "https://certificates.cs50.io/9d05060a-0bfe-4069-a07f-78f5530fcab3",
+      cs50p:
+        "https://cs50.harvard.edu/certificates/32d8e6af-8892-4666-8d80-a23f94a9b36d",
+      period: "January to April 2023",
       description: [
         "Achieved a broad and strong understanding of computer science and programming, including how to think algorithmically and solve problems efficiently. I have grasped concepts related to abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. For example, I built a full-stack finance app using HTML with Jinja syntax, making use of API, Flask, and SQL.",
         "By understanding C as a language used to build and abstract memory and hardware manipulation for Python, I obtained foundational programming concepts in Python especially on the use of classes, objects, methods and properties, utilizing of third-party libraries (i.e. Beautiful Soup, Report Lab, SQLAlchemy, Pandas), and among others.",
@@ -44,6 +49,8 @@ const Careers = () => {
       course: "Google Data Analytics",
       school: "Grow with Google on Coursera",
       type: "Professional Certificate",
+      links:
+        "https://www.credly.com/badges/b275eb8b-6390-478d-9450-59ffbe3177ae/linked_in_profile",
       period: "December 2022",
       description: [
         "Gained immense understanding of exploring, extracting, cleaning, transforming, analyzing, and sharing data through the art of visualization and providing data-driven recommendations. I have also acquired strong fundamentals in data structures and proficiency in using SQL, R programming languages, and Jupyter notebook for data analysis processes.",
@@ -72,6 +79,8 @@ const Careers = () => {
       course: "Javascript Algorithms and Data Structures",
       school: "freeCodeCamp",
       type: "Certificate of Completion",
+      links:
+        "https://www.freecodecamp.org/certification/fcc5c7f7e6a-bdd5-40ad-be91-0edf52b7dae2/javascript-algorithms-and-data-structures",
       period: "October 2022",
       description: [
         "Gained the fundamentals in Javascript programming concepts and application of Object Oriented Programming and Functional Programming.",
@@ -139,7 +148,19 @@ const Careers = () => {
           </div>
 
           {education.map(
-            ({ course, school, period, description, type }, index) => (
+            (
+              {
+                course,
+                school,
+                period,
+                description,
+                type,
+                links,
+                cs50x,
+                cs50p,
+              },
+              index
+            ) => (
               <div
                 key={index}
                 className="container grid md:grid-cols-3 gap-4 md:gap-8 mb-16 mt-10"
@@ -153,9 +174,36 @@ const Careers = () => {
                   <p className="text-base xl:text-xl font-semibold text-yellow-600">
                     {school}
                   </p>
-                  <p className="text-sm lg:text-base text-gray-500 py-1 lg:py-3">
-                    {type}
-                  </p>
+                  <div className="text-sm lg:text-base text-gray-500 py-1 lg:py-3 flex">
+                    {links ? (
+                      <a className="flex text-green-700" href={links}>
+                        {type} <CheckSVG />
+                      </a>
+                    ) : (
+                      type
+                    )}{" "}
+                    {cs50x ? (
+                      <div className="px-2 mx-2 border rounded-full bg-green-700">
+                        <a
+                          className="flex font-semibold text-white"
+                          href={cs50x}
+                        >
+                          C50X
+                        </a>
+                      </div>
+                    ) : null}
+                    {cs50p ? (
+                      <div className="px-2 border rounded-full bg-green-700">
+                        <a
+                          className="flex font-semibold text-white"
+                          href={cs50p}
+                        >
+                          C50P
+                        </a>
+                      </div>
+                    ) : null}
+                  </div>
+
                   {description.map((item, index) => {
                     return (
                       <p
