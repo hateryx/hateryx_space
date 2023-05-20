@@ -10,7 +10,6 @@ const ProjectCard = (props) => {
   };
 
   useEffect(() => {
-    // Scroll to top of page when component is mounted
     setTimeout(() => {
       document.getElementById("projectcard").scrollIntoView({
         behavior: "smooth",
