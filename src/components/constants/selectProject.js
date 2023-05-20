@@ -14,7 +14,7 @@ import git_hub from "../../assets/images/port-github.svg";
 import golive from "../../assets/images/golive.svg";
 import progress from "../../assets/images/golive.svg";
 
-function select_project(which_project) {
+function selectProject(which_project) {
   switch (which_project) {
     case "Investopia":
       const efinance_content = {
@@ -165,9 +165,9 @@ function select_project(which_project) {
           },
           {
             icon_source: lib_icon,
-            lang: "Beautiful Soup",
+            lang: "BeauSoup4",
             details:
-              "This library enables the app to do the web scraping functions: <x> - Extract all the links of news articles related to the selected news category; <x> - Extract the contents of a news article and store it into string for loading to PDF.",
+              "Beautiful Soup 4 enables the app to do the web scraping functions: <x> - Extract all the links of news articles related to the selected news category; <x> - Extract the contents of a news article and store it into string for loading to PDF.",
           },
           {
             icon_source: reportlab,
@@ -187,4 +187,4 @@ function select_project(which_project) {
   }
 }
 
-export default select_project;
+export default selectProject;

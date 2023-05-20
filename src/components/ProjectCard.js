@@ -1,10 +1,15 @@
 import react, { useState, useEffect } from "react";
-import { SVG_close, CheckSVG } from "../assets/icons";
-import select_project from "./constants/selectProject.js";
-
+import { SVG_close, CheckSVG, PlusSVG } from "../assets/icons.js";
+import selectProject from "./constants/selectProject.js";
 import git_hub from "../assets/images/port-github.svg";
 
 const ProjectCard = (props) => {
+  const [openTechDetails, setOpenTechDetails] = useState(false);
+
+  const toggleTechDetails = () => {
+    setOpenTechDetails(!openTechDetails);
+  };
+
   const clickHandler = () => {
     props.closeProjectCard();
   };
@@ -19,7 +24,7 @@ const ProjectCard = (props) => {
     }, 200);
   }, []);
 
-  let final_content = select_project(props.which_project);
+  let final_content = selectProject(props.which_project);
 
   return (
     <div className="container shadow-lg">
@@ -93,24 +98,33 @@ const ProjectCard = (props) => {
         {final_content.tech.map(({ icon_source, lang, details }, index) => (
           <div
             key={index}
-            className="bg-blue-100 rounded px-1 py-2 font-semibold text-black mb-3 text-xs md:text-sm items-center flex w-full space-x-4"
+            onClick={toggleTechDetails}
+            className="bg-blue-100 rounded px-1 pt-4 font-semibold text-black mb-3 text-xs md:text-sm items-center flex flex-col justify-between w-full"
           >
-            <div className="pl-2 md:pl-5 w-2/12">
+            <div className="items-center w-sm h-sm">
               <img
+                key={index}
                 src={icon_source}
-                className="object-contain items-center px-2"
+                className="object-fill max-w-min items-center"
               ></img>
-              <div className="text-center">{lang}</div>
+              <div className="text-xs text-center w-full">{lang}</div>
             </div>
-
-            <div className="px-3 w-10/12 mr-3 font-light leading-tight transition-all duration-100 ease-in-out hover:leading-normal hover:px-2 hover:w-9/12">
+            <div
+              className={`px-3 max-w-xs md:max-w-sm min-w-xs md:min-w-sm font-light leading-relaxed transition-all duration-300 ease-in-out  py-2 `}
+            >
               {" "}
-              {details.split("<x>").map((elem, index) => (
-                <p key={index} className="py-1 text-grey-800">
-                  {elem}
-                </p>
-              ))}
-            </div>
+              <div
+                className={`${
+                  openTechDetails
+                    ? "translate-y-0 opacity-100 "
+                    : "opacity-0 -translate-y-full -my-[200px]"
+                } py-1 text-grey-800 ransition-all duration-500 ease-in-out border-t-2 border-blue-800`}
+              >
+                {details.split("<x>").map((elem, index) => (
+                  <p key={index}>{elem}</p>
+                ))}
+              </div>
+            </div>{" "}
           </div>
         ))}
 
