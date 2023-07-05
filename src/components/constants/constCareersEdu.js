@@ -1,5 +1,16 @@
 const constCareersEdu = [
   {
+    course: "Google IT Automation with Python",
+    school: "Grow with Google on Coursera",
+    type: "Professional Certificates",
+    links:
+      "https://www.credly.com/badges/faaa0a1f-d94e-4be2-a396-bdfcbe22263b/linked_in_profile",
+    period: "April to July 2023",
+    description: [
+      "Gained the fundamentals to write bash and Puppet scripts to automate repetitive tasks, manage IT infrastructure efficiently, and enhance productivity in various IT-related roles.", " I have honed my programming fundamentals, troubleshooting and debugging techniques, automation with Python, working with APIs, and using Git for version control. "
+    ],
+  },
+  {
     course: "Computer Science for Python Programming",
     school: "Harvard X",
     type: "Professional Certificates",
