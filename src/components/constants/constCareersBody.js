@@ -21,7 +21,7 @@ const constCareersBody = [
     location: "Philippines",
     period: "March 2022 - November 2022",
     description:
-      "As the senior IT auditor, I lead audits of IT applications to provide assurance on their compliance with the bank's standards for the System Development Life Cycle (SDLC), IT security (including application security controls and remediation of vulnerability assessment findings), as well as relevant IT regulations for banks such as IT risk management, IT governance, and business continuity standards. I document audit issues in a report for release to senior management and the board audit committee.",
+      "As the supervising IT auditor, I lead audits of IT applications to ensure their compliance with the bank's standards for the System Development Life Cycle (SDLC), IT security (including application security controls and addressing vulnerability assessment findings), and relevant IT regulations specific to banks, such as IT risk management, IT governance, and business continuity standards. I document the audit findings and issues in a comprehensive report, which is then released to senior management and the board audit committee.",
   },
   {
     position:
