@@ -214,12 +214,12 @@ function selectProject(which_project) {
               "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
           },
         ],
-        code_repo: "hateryx/newspyscraper",
-        code_repo_link: "https://github.com/hateryx/newspyscraper",
+        code_repo: "hateryx/next-ai-psych",
+        code_repo_link: "https://github.com/hateryx/next-ai-psych",
         status_icon: golive,
-        status_key: "Ready",
-        deployed_key: "Available for usage at GitHub",
-        deployed_site: "https://github.com/hateryx/newspyscraper",
+        status_key: "Deployed at:",
+        deployed_key: "Vercel",
+        deployed_site: "https://next-ai-psych.vercel.app/",
       };
       return nextaipsych_content;
     case "Next Angel Sue":
@@ -252,14 +252,14 @@ function selectProject(which_project) {
               "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
           },
         ],
-        code_repo: "hateryx/newspyscraper",
-        code_repo_link: "https://github.com/hateryx/newspyscraper",
+        code_repo: "hateryx/next-angelsue",
+        code_repo_link: "https://github.com/hateryx/next-angelsue",
         status_icon: golive,
-        status_key: "Ready",
-        deployed_key: "Available for usage at GitHub",
-        deployed_site: "https://github.com/hateryx/newspyscraper",
+        status_key: "Deployed at:",
+        deployed_key: "Vercel",
+        deployed_site: "https://next-angelsue.vercel.app/",
       };
-    return nextangelsue_content_content;
+    return nextangelsue_content;
   }
 }
 
