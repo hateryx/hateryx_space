@@ -139,7 +139,8 @@ const Portfolio = () => {
               which_project={pickProject}
             />
           )}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 mx-auto content-around items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 mx-auto content-around items-center">
+            <div></div>
           <Carousel 
             showArrows={true}
             >
@@ -172,13 +173,13 @@ const Portfolio = () => {
                           Tech/Libraries:
                         </p>
                       </div>
-                      <div className="px-3 py-4 pb-2 grid grid-cols-2 items-center gap-2">
+                      <div className="px-3 py-4 pb-2 grid grid-cols-2 items-center gap-2 max-h-lg">
                         {tech.map(({ icon_source, lang }, index) => (
                           <div
                             key={index}
                             className="bg-gray-200 rounded-full px-1 py-2 font-semibold text-gray-700 mb-3 text-xs items-center flex w-full"
                           >
-                            <img src={icon_source}></img>
+                            <img className="h-10" src={icon_source}></img>
                             <div key={index}>{lang}</div>
                           </div>
                         ))}
