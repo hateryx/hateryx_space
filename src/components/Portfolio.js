@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import {Carousel} from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { SVG_eye } from "../assets/icons";
 
 import portpic_1 from "../assets/images/project1.svg";
@@ -25,7 +27,31 @@ import ProjectCard from "./ProjectCard";
 const Portfolio = () => {
   const content = [
     {
+      project: "Next AI Psych",
+      picture: portpic_4,
+      description:
+        "Practice stock trading and portfolio management thru this app. Inspired from CS50, the app enables the user to see his/her equities value, real-time profit/loss and transaction history.",
+      tech: [
+        { icon_source: htmlcss, lang: "HTML CSS" },
+        { icon_source: python, lang: "Python" },
+        { icon_source: flask, lang: "Flask" },
+        { icon_source: mysql, lang: "SQL" },
+      ],
+    },
+    {
       project: "Investopia",
+      picture: portpic_4,
+      description:
+        "Practice stock trading and portfolio management thru this app. Inspired from CS50, the app enables the user to see his/her equities value, real-time profit/loss and transaction history.",
+      tech: [
+        { icon_source: htmlcss, lang: "HTML CSS" },
+        { icon_source: python, lang: "Python" },
+        { icon_source: flask, lang: "Flask" },
+        { icon_source: mysql, lang: "SQL" },
+      ],
+    },
+    {
+      project: "Next Angel Sue",
       picture: portpic_4,
       description:
         "Practice stock trading and portfolio management thru this app. Inspired from CS50, the app enables the user to see his/her equities value, real-time profit/loss and transaction history.",
@@ -114,12 +140,15 @@ const Portfolio = () => {
             />
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 mx-auto content-around items-center">
+          <Carousel 
+            showArrows={true}
+            >
             {content.map(({ project, picture, description, tech }, index) => (
               <div
                 id={project}
                 key={index}
                 onClick={clickHandler}
-                className="bg-white rounded-t-lg flex items-center px-6 sm:px-6 md:px-0 lg:px-0 xl:px-0 z-8"
+                className="bg-white rounded-t-lg flex items-center px-6 sm:px-6 md:px-0 lg:px-0 xl:px-0 z-1"
               >
                 <div className="w-full max-w-m border-2 shadow-md rounded-lg">
                   <div className="w-full rounded-t-lg bg-blue-900 h-10 pl-2 flex items-center">
@@ -159,6 +188,7 @@ const Portfolio = () => {
                 </div>
               </div>
             ))}
+          </Carousel>
           </div>
         </div>
       </section>
