@@ -221,7 +221,45 @@ function selectProject(which_project) {
         deployed_key: "Available for usage at GitHub",
         deployed_site: "https://github.com/hateryx/newspyscraper",
       };
-    return nextaipsych_content;
+      return nextaipsych_content;
+    case "Next Angel Sue":
+      const nextangelsue_content = {
+        project: "Next Angel Sue",
+        overview:
+          "Answer AI generated questions and get your psychical assessment by the power of Open AI's Chat GPT 3.5 Turbo Model. Fast API, a Python API library, is developed and used to handle API routes between Next JS and Open AI API.",
+        features: [
+          "App provides 8 questions for users to answer",
+          "Each answer is submitted to OpenAI for assessment.",
+          "OpenAI sends assessment to the app and in turn, app displays the assessment.",
+        ],
+        tech: [
+          {
+            icon_source: reactjs,
+            lang: "React JS",
+            details:
+              "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
+          },
+          {
+            icon_source: python,
+            lang: "Python",
+            details:
+              "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
+          },
+          {
+            icon_source: python,
+            lang: "FastAPI",
+            details:
+              "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
+          },
+        ],
+        code_repo: "hateryx/newspyscraper",
+        code_repo_link: "https://github.com/hateryx/newspyscraper",
+        status_icon: golive,
+        status_key: "Ready",
+        deployed_key: "Available for usage at GitHub",
+        deployed_site: "https://github.com/hateryx/newspyscraper",
+      };
+    return nextangelsue_content_content;
   }
 }
 
