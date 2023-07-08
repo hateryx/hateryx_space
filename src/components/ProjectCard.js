@@ -29,7 +29,7 @@ const ProjectCard = (props) => {
   return (
     <div className="container shadow-lg">
       <div
-        className="absolute inset-0 justify-center items-center z-3 shadow-xl bg-black bg-opacity-75"
+        className="absolute inset-0 justify-center items-center z-10 shadow-xl bg-black bg-opacity-75"
         onClick={clickHandler}
       ></div>
       <div className="max-w-lg z-50 mx-auto px-8 py-10 bg-white shadow-lg rounded-md sm:max-w-xl relative">
