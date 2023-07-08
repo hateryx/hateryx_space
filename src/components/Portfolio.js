@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import '../assets/css/carousel.css'
 
 import { SVG_eye } from "../assets/icons";
 
@@ -78,10 +79,13 @@ const Portfolio = () => {
   ];
 
   const SliderSettings = {
+    className: "center",
+    // centerMode: true,
+    // centerPadding: "10px",
     dots: true,
+    speed: 400,
+    slidesToShow: 3,
     infinite: true,
-    speed: 500,
-    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
       {
@@ -96,9 +100,10 @@ const Portfolio = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          dots: true
         }
       },
       {
@@ -152,14 +157,14 @@ const Portfolio = () => {
               which_project={pickProject}
             />
           )}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-1 gap-6 mx-auto content-around items-center">
+          <div className="grid grid-cols-1 gap-6 mx-auto content-around items-center">
             <Slider {...SliderSettings}>
             {content.map(({ project, picture, description, tech }, index) => (
               <div
                 id={project}
                 key={index}
                 onClick={clickHandler}
-                className="bg-white rounded-t-lg flex items-center px-6 sm:px-6 md:px-0 lg:px-0 xl:px-0 z-8"
+                className="bg-white rounded-t-lg flex items-center px-6 sm:px-6 md:px-0 lg:px-0 xl:px-0 z-8" 
               >
                 <div className="w-full max-w-m border-2 shadow-md rounded-lg">
                   <div className="w-full rounded-t-lg bg-blue-900 h-10 pl-2 flex items-center">
