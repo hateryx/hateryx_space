@@ -59,7 +59,7 @@ const NavBar = () => {
         </div>
         <div className="block lg:hidden">
           <button
-            className="flex items-center px-3 py-2 border rounded border-blue-60"
+            className="flex items-center px-3 py-2 border rounded border-blue-60 mr-3"
             onClick={clickHandler}
           >
             <svg

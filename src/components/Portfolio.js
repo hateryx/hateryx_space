@@ -169,20 +169,20 @@ const Portfolio = () => {
               which_project={pickProject}
             />
           )}
-          <div className="grid grid-cols-1 content-around items-center">
+          <div className="grid grid-cols-1 content-around items-center container">
             <Slider {...SliderSettings}>
             {content.map(({ project, picture, description, tech }, index) => (
               <div
                 id={project}
                 key={index}
                 onClick={clickHandler}
-                className="bg-white rounded-t-lg flex container mr-[20px] items-center px-6 sm:px-6 md:px-0 lg:px-0 xl:px-0 z-8" 
+                className="bg-white rounded-t-lg flex items-center px-3 sm:px-3 md:px-0 lg:px-0 xl:px-0 z-8" 
               >
-                <div className="w-full max-w-m border-2 shadow-md rounded-lg ">
+                <div className="w-full max-w-m border-2 shadow-md rounded-lg">
                   <div className="w-full rounded-t-lg bg-blue-900 h-10 pl-2 flex items-center">
                     <img src={openCard} className="h-6 w-6"></img>
                   </div>
-                  <h3 className="mx-4 my-3 py-2 text-center text-xl font-bold text-blue-800 border-y-2  border-blue-700">
+                  <h3 className="mx-4 my-3 py-2 text-center text-xl font-bold text-blue-800 border-y-2 border-blue-700">
                       {project}
                     </h3>
                   <div className="portpic-window items-center flex justify-center h-[500px]">
