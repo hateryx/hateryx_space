@@ -5,17 +5,20 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import { SVG_eye } from "../assets/icons";
 
-import portpic_1 from "../assets/images/project1.svg";
+import portpic_investopia from "../assets/images/portpic_investopia.jpg";
 import portpic_2 from "../assets/images/project2.svg";
 import portpic_3 from "../assets/images/project3.svg";
-import portpic_4 from "../assets/images/project4.svg";
+import portpic_1 from "../assets/images/project4.svg";
+import portpic_nextaipsych from "../assets/images/portpic_nextaipsych.jpg"
 
 import python from "../assets/images/port-python.svg";
+import fastapi from "../assets/images/port-fastapi.svg"
 import flask from "../assets/images/port-flask.svg";
 import mysql from "../assets/images/port-mysql.svg";
 import javascript from "../assets/images/port-javascript.svg";
 import htmlcss from "../assets/images/port-htmlcss.svg";
 import reactjs from "../assets/images/port-reactjs.svg";
+import nextjs from "../assets/images/port-nextjs.svg"
 import mongodb from "../assets/images/port-mongodb.svg";
 import nodejs from "../assets/images/port-nodejs.svg";
 import expressjs from "../assets/images/port-expressjs.svg";
@@ -31,7 +34,7 @@ const Portfolio = () => {
   const content = [
     {
       project: "Investopia",
-      picture: portpic_4,
+      picture: portpic_investopia,
       description:
         "Practice stock trading and portfolio management thru this app. Inspired from CS50, the app enables the user to see his/her equities value, real-time profit/loss and transaction history.",
       tech: [
@@ -39,6 +42,18 @@ const Portfolio = () => {
         { icon_source: python, lang: "Python" },
         { icon_source: flask, lang: "Flask" },
         { icon_source: mysql, lang: "SQL" },
+      ],
+    },
+    {
+      project: "Next AI Psych",
+      picture: portpic_nextaipsych,
+      description:
+        "Get to know more of yourself by answering questions and let the power of Open AI's Chat GPT 3.5 Turbo Model to give you an objective glance of your personality by its assessment of your answers.",
+      tech: [
+        { icon_source: reactjs, lang: "ReactJS" },
+        { icon_source: nextjs, lang: "NextJS" },
+        { icon_source: python, lang: "Python" },
+        { icon_source: fastapi, lang: "Fast API" },
       ],
     },
     {
@@ -83,7 +98,7 @@ const Portfolio = () => {
     // centerPadding: "10px",
     dots: true,
     speed: 400,
-    slidesToShow: 3,
+    slidesToShow: 2,
     infinite: true,
     slidesToScroll: 1,
     responsive: [
@@ -156,7 +171,7 @@ const Portfolio = () => {
               which_project={pickProject}
             />
           )}
-          <div className="grid grid-cols-1 gap-6 mx-auto content-around items-center">
+          <div className="grid grid-cols-1 gap-6 mx-15 content-around items-center">
             <Slider {...SliderSettings}>
             {content.map(({ project, picture, description, tech }, index) => (
               <div
@@ -169,11 +184,13 @@ const Portfolio = () => {
                   <div className="w-full rounded-t-lg bg-blue-900 h-10 pl-2 flex items-center">
                     <img src={openCard} className="h-6 w-6"></img>
                   </div>
-                  <img
-                    src={picture}
-                    alt="Project 1"
-                    className="h-48 w-full p-3"
-                  ></img>
+                  <div className="portpic-window items-center flex justify-center h-[500px]">
+                    <img
+                      src={picture}
+                      alt="Project 1"
+                      className="p-1"
+                    ></img>
+                  </div>
                   <div className="p-4">
                     <h3 className="text-xl font-medium text-blue-800 border-y-2 border-blue-700">
                       {project}
@@ -191,9 +208,11 @@ const Portfolio = () => {
                         {tech.map(({ icon_source, lang }, index) => (
                           <div
                             key={index}
-                            className="bg-gray-200 rounded-full px-1 py-2 font-semibold text-gray-700 mb-3 text-xs items-center flex w-full"
+                            className="bg-gray-200 rounded-full px-1 py-2 font-semibold text-gray-700 mb-3 text-xs items-center flex w-full gap-3"
                           >
-                            <img src={icon_source}></img>
+                            <div className="h-[50px] w-[48px]">
+                            <img src={icon_source} className="w-full min-h-full object-cover items-center"></img>
+                            </div>
                             <div key={index}>{lang}</div>
                           </div>
                         ))}
