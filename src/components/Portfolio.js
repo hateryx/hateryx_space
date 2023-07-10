@@ -6,9 +6,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import { SVG_eye } from "../assets/icons";
 
 import portpic_investopia from "../assets/images/portpic_investopia.jpg";
-import portpic_2 from "../assets/images/project2.svg";
-import portpic_3 from "../assets/images/project3.svg";
-import portpic_1 from "../assets/images/project4.svg";
+import portpic_jobhunter from "../assets/images/portpic_jobhunter.jpg";
+import portpic_hangman from "../assets/images/portpic_hangman.jpg";
+import portpic_newspyscraper from "../assets/images/portpic_newspyscraper.jpg";
 import portpic_nextaipsych from "../assets/images/portpic_nextaipsych.jpg"
 
 import python from "../assets/images/port-python.svg";
@@ -58,7 +58,7 @@ const Portfolio = () => {
     },
     {
       project: "Job Hunter",
-      picture: portpic_2,
+      picture: portpic_jobhunter,
       description:
         "Keep track of all your job applications in one place. The app allows you to easily see the status of each application, set reminders for follow-up tasks and see thru a dashboard.",
       tech: [
@@ -70,7 +70,7 @@ const Portfolio = () => {
     },
     {
       project: "News PyScraper",
-      picture: portpic_1,
+      picture: portpic_newspyscraper,
       description:
         "Select a news report category (e.g. headline news, business, sport, etc) and the app will instantly scrape and deliver in PDF format the latest articles from a news website.",
       tech: [
@@ -81,7 +81,7 @@ const Portfolio = () => {
     },
     {
       project: "Hangman Game",
-      picture: portpic_3,
+      picture: portpic_hangman,
       description:
         "A classic word guessing game built using vanilla HTML, CSS and Javascript. The player is given a question as hint for the answer, which are randomly generated therefrom using API Ninjas.",
       tech: [
