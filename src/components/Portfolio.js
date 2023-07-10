@@ -94,8 +94,6 @@ const Portfolio = () => {
 
   const SliderSettings = {
     className: "center",
-    // centerMode: true,
-    // centerPadding: "10px",
     dots: true,
     speed: 400,
     slidesToShow: 2,
@@ -112,7 +110,7 @@ const Portfolio = () => {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -171,19 +169,22 @@ const Portfolio = () => {
               which_project={pickProject}
             />
           )}
-          <div className="grid grid-cols-1 gap-6 mx-15 content-around items-center">
+          <div className="grid grid-cols-1 content-around items-center">
             <Slider {...SliderSettings}>
             {content.map(({ project, picture, description, tech }, index) => (
               <div
                 id={project}
                 key={index}
                 onClick={clickHandler}
-                className="bg-white rounded-t-lg flex items-center px-6 sm:px-6 md:px-0 lg:px-0 xl:px-0 z-8" 
+                className="bg-white rounded-t-lg flex container mr-[20px] items-center px-6 sm:px-6 md:px-0 lg:px-0 xl:px-0 z-8" 
               >
-                <div className="w-full max-w-m border-2 shadow-md rounded-lg">
+                <div className="w-full max-w-m border-2 shadow-md rounded-lg ">
                   <div className="w-full rounded-t-lg bg-blue-900 h-10 pl-2 flex items-center">
                     <img src={openCard} className="h-6 w-6"></img>
                   </div>
+                  <h3 className="mx-4 my-3 py-2 text-center text-xl font-bold text-blue-800 border-y-2  border-blue-700">
+                      {project}
+                    </h3>
                   <div className="portpic-window items-center flex justify-center h-[500px]">
                     <img
                       src={picture}
@@ -192,16 +193,13 @@ const Portfolio = () => {
                     ></img>
                   </div>
                   <div className="p-4">
-                    <h3 className="text-xl font-medium text-blue-800 border-y-2 border-blue-700">
-                      {project}
-                    </h3>
                     <p className="text-gray-600 text-justify font-light py-2">
                       {description}
                     </p>
-                    <div className="bg-blue-900 rounded-t-lg">
+                    <div className="bg-blue-900 rounded-t-lg my-5">
                       <div className="p-2 bg-yellow-400 rounded-t-lg">
                         <p className="text-gray-600 text-justify font-semibold">
-                          Tech/Libraries:
+                          Tech/Libraries Used:
                         </p>
                       </div>
                       <div className="px-3 py-4 pb-2 grid grid-cols-2 items-center gap-2">
