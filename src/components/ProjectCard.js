@@ -102,11 +102,13 @@ const ProjectCard = (props) => {
             className="bg-blue-100 rounded px-1 pt-4 font-semibold text-black mb-3 text-xs md:text-sm items-center flex flex-col justify-between w-full"
           >
             <div className="items-center w-sm h-sm">
+              <div className="h-[50px] w-[50px]">
               <img
                 key={index}
                 src={icon_source}
-                className="object-fill max-w-min items-center"
+                className="w-full min-h-full object-cover items-center"
               ></img>
+              </div>
               <div className="text-xs text-center w-full">{lang}</div>
             </div>
             <div

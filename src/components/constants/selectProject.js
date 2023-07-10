@@ -193,7 +193,8 @@ function selectProject(which_project) {
           "Answer AI generated questions and get your psychical assessment by the power of Open AI's Chat GPT 3.5 Turbo Model. Fast API, a Python API library, is developed and used to handle API routes between Next JS and Open AI API.",
         features: [
           "App provides 8 questions for users to answer",
-          "Each answer is submitted to OpenAI for assessment.",
+          "Each answer is eventually submitted to the developed FastAPI (deployed at render.com)",
+          "OpenAI for assessment.",
           "OpenAI sends assessment to the app and in turn, app displays the assessment.",
         ],
         tech: [
@@ -201,25 +202,25 @@ function selectProject(which_project) {
             icon_source: reactjs,
             lang: "React JS",
             details:
-              "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
+              "React.js is built for the front-end to structure components and manage data flow using state management. User prompts based on user input are stored in states and then sent to FastAPI to handle prompts for the OpenAI API. Subsequently, API responses are stored in state to display data back to the user.",
           },
           {
             icon_source: nextjs,
             lang: "Next JS",
             details:
-              "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
+              "Next.js is used as the React framework to serve as the main structure of the app. Its support for server-side rendering facilitates easier API calls and manages data flow. It can work seamlessly with FastAPI, which can serve as an agent for the OpenAI API.",
           },
           {
             icon_source: python,
             lang: "Python",
             details:
-              "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
+              "Python is utilized to build an intermediary API layer that enhances the processing of prompts from the front-end and the handling of responses from the OpenAI API. This layer acts as a bridge between the two components, enabling efficient and effective data manipulation, transformation, and integration.",
           },
           {
             icon_source: fastapi,
             lang: "FastAPI",
             details:
-              "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
+              "FastAPI, a Python library, is developed to act as an intermediary agent to enable efficient request processing and validation, security and rate limiting. It can handle incoming prompts from the frontend, validate the data, perform any necessary pre-processing or formatting, and then forward the prompts to the OpenAI API. This ensures that the prompts meet the required criteria and are properly prepared for consumption by the AI model.",
           },
         ],
         code_repo: "hateryx/next-ai-psych",
