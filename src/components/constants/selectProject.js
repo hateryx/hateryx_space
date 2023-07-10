@@ -1,10 +1,12 @@
 import python from "../../assets/images/port-python.svg";
+import fastapi from "../../assets/images/port-fastapi.svg"
 import flask from "../../assets/images/port-flask.svg";
 import mysql from "../../assets/images/port-mysql.svg";
 import javascript from "../../assets/images/port-javascript.svg";
 import htmlcss from "../../assets/images/port-htmlcss.svg";
 import reactjs from "../../assets/images/port-reactjs.svg";
 import mongodb from "../../assets/images/port-mongodb.svg";
+import nextjs from "../../assets/images/port-nextjs.svg";
 import nodejs from "../../assets/images/port-nodejs.svg";
 import expressjs from "../../assets/images/port-expressjs.svg";
 import api_icon from "../../assets/images/port-api.png";
@@ -184,7 +186,7 @@ function selectProject(which_project) {
         deployed_site: "https://github.com/hateryx/newspyscraper",
       };
       return newspy_content;
-    case "Next Ai Psych":
+    case "Next AI Psych":
       const nextaipsych_content = {
         project: "Next AI Psych",
         overview:
@@ -202,13 +204,19 @@ function selectProject(which_project) {
               "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
           },
           {
+            icon_source: nextjs,
+            lang: "Next JS",
+            details:
+              "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
+          },
+          {
             icon_source: python,
             lang: "Python",
             details:
               "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
           },
           {
-            icon_source: python,
+            icon_source: fastapi,
             lang: "FastAPI",
             details:
               "Supporting Libraries Used: <x>1) request : Access to the website for web scraping is made possible through the use of modified header; <x> 2) re -  The regex library. While content is extracted largely by bs4, the `re.match` function allows cleaning of the content before its finalization;<x> 3) datetime - converts date from the link into a string format that is used to load and print to the title. <x> 4) titlecase - formats title for styling purposes <x>",
