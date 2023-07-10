@@ -5,17 +5,20 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import { SVG_eye } from "../assets/icons";
 
-import portpic_1 from "../assets/images/project1.svg";
-import portpic_2 from "../assets/images/project2.svg";
-import portpic_3 from "../assets/images/project3.svg";
-import portpic_4 from "../assets/images/project4.svg";
+import portpic_investopia from "../assets/images/portpic_investopia.jpg";
+import portpic_jobhunter from "../assets/images/portpic_jobhunter.jpg";
+import portpic_hangman from "../assets/images/portpic_hangman.jpg";
+import portpic_newspyscraper from "../assets/images/portpic_newspyscraper.jpg";
+import portpic_nextaipsych from "../assets/images/portpic_nextaipsych.jpg"
 
 import python from "../assets/images/port-python.svg";
+import fastapi from "../assets/images/port-fastapi.svg"
 import flask from "../assets/images/port-flask.svg";
 import mysql from "../assets/images/port-mysql.svg";
 import javascript from "../assets/images/port-javascript.svg";
 import htmlcss from "../assets/images/port-htmlcss.svg";
 import reactjs from "../assets/images/port-reactjs.svg";
+import nextjs from "../assets/images/port-nextjs.svg"
 import mongodb from "../assets/images/port-mongodb.svg";
 import nodejs from "../assets/images/port-nodejs.svg";
 import expressjs from "../assets/images/port-expressjs.svg";
@@ -31,7 +34,7 @@ const Portfolio = () => {
   const content = [
     {
       project: "Investopia",
-      picture: portpic_4,
+      picture: portpic_investopia,
       description:
         "Practice stock trading and portfolio management thru this app. Inspired from CS50, the app enables the user to see his/her equities value, real-time profit/loss and transaction history.",
       tech: [
@@ -42,8 +45,20 @@ const Portfolio = () => {
       ],
     },
     {
+      project: "Next AI Psych",
+      picture: portpic_nextaipsych,
+      description:
+        "Get to know more of yourself by answering questions and let the power of Open AI's Chat GPT 3.5 Turbo Model to give you an objective glance of your personality by its assessment of your answers.",
+      tech: [
+        { icon_source: reactjs, lang: "ReactJS" },
+        { icon_source: nextjs, lang: "NextJS" },
+        { icon_source: python, lang: "Python" },
+        { icon_source: fastapi, lang: "Fast API" },
+      ],
+    },
+    {
       project: "Job Hunter",
-      picture: portpic_2,
+      picture: portpic_jobhunter,
       description:
         "Keep track of all your job applications in one place. The app allows you to easily see the status of each application, set reminders for follow-up tasks and see thru a dashboard.",
       tech: [
@@ -55,7 +70,7 @@ const Portfolio = () => {
     },
     {
       project: "News PyScraper",
-      picture: portpic_1,
+      picture: portpic_newspyscraper,
       description:
         "Select a news report category (e.g. headline news, business, sport, etc) and the app will instantly scrape and deliver in PDF format the latest articles from a news website.",
       tech: [
@@ -66,7 +81,7 @@ const Portfolio = () => {
     },
     {
       project: "Hangman Game",
-      picture: portpic_3,
+      picture: portpic_hangman,
       description:
         "A classic word guessing game built using vanilla HTML, CSS and Javascript. The player is given a question as hint for the answer, which are randomly generated therefrom using API Ninjas.",
       tech: [
@@ -79,11 +94,9 @@ const Portfolio = () => {
 
   const SliderSettings = {
     className: "center",
-    // centerMode: true,
-    // centerPadding: "10px",
     dots: true,
     speed: 400,
-    slidesToShow: 3,
+    slidesToShow: 2,
     infinite: true,
     slidesToScroll: 1,
     responsive: [
@@ -97,7 +110,7 @@ const Portfolio = () => {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -156,44 +169,48 @@ const Portfolio = () => {
               which_project={pickProject}
             />
           )}
-          <div className="grid grid-cols-1 gap-6 mx-auto content-around items-center">
+          <div className="grid grid-cols-1 content-around items-center">
             <Slider {...SliderSettings}>
             {content.map(({ project, picture, description, tech }, index) => (
               <div
                 id={project}
                 key={index}
                 onClick={clickHandler}
-                className="bg-white rounded-t-lg flex items-center px-6 sm:px-6 md:px-0 lg:px-0 xl:px-0 z-8" 
+                className="bg-white rounded-t-lg flex container mr-[20px] items-center px-6 sm:px-6 md:px-0 lg:px-0 xl:px-0 z-8" 
               >
-                <div className="w-full max-w-m border-2 shadow-md rounded-lg">
+                <div className="w-full max-w-m border-2 shadow-md rounded-lg ">
                   <div className="w-full rounded-t-lg bg-blue-900 h-10 pl-2 flex items-center">
                     <img src={openCard} className="h-6 w-6"></img>
                   </div>
-                  <img
-                    src={picture}
-                    alt="Project 1"
-                    className="h-48 w-full p-3"
-                  ></img>
-                  <div className="p-4">
-                    <h3 className="text-xl font-medium text-blue-800 border-y-2 border-blue-700">
+                  <h3 className="mx-4 my-3 py-2 text-center text-xl font-bold text-blue-800 border-y-2  border-blue-700">
                       {project}
                     </h3>
+                  <div className="portpic-window items-center flex justify-center h-[500px]">
+                    <img
+                      src={picture}
+                      alt="Project 1"
+                      className="p-1"
+                    ></img>
+                  </div>
+                  <div className="p-4">
                     <p className="text-gray-600 text-justify font-light py-2">
                       {description}
                     </p>
-                    <div className="bg-blue-900 rounded-t-lg">
+                    <div className="bg-blue-900 rounded-t-lg my-5">
                       <div className="p-2 bg-yellow-400 rounded-t-lg">
                         <p className="text-gray-600 text-justify font-semibold">
-                          Tech/Libraries:
+                          Tech/Libraries Used:
                         </p>
                       </div>
                       <div className="px-3 py-4 pb-2 grid grid-cols-2 items-center gap-2">
                         {tech.map(({ icon_source, lang }, index) => (
                           <div
                             key={index}
-                            className="bg-gray-200 rounded-full px-1 py-2 font-semibold text-gray-700 mb-3 text-xs items-center flex w-full"
+                            className="bg-gray-200 rounded-full px-1 py-2 font-semibold text-gray-700 mb-3 text-xs items-center flex w-full gap-3"
                           >
-                            <img src={icon_source}></img>
+                            <div className="h-[50px] w-[48px]">
+                            <img src={icon_source} className="w-full min-h-full object-cover items-center"></img>
+                            </div>
                             <div key={index}>{lang}</div>
                           </div>
                         ))}
