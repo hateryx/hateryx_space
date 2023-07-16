@@ -5,12 +5,12 @@ const About = () => {
   return (
     <div id="about" className="relative bg-white z-9">
       <section className="flex flex-col items-center justify-center min-h-screen py-16 mx-2">
-        <div className="container grid md:grid-cols-3 gap-8 items-center">
+        <div className="container grid md:grid-cols-3 gap-8 items-center mx-[256px]">
           
           <div className="px-6 md:px-0 mx-auto">
-            <img className="rounded-full w-full" src={hero}></img>
+            <img className="rounded-full w-4/5 ml-10" src={hero}></img>
           </div>
-          <div className="md:col-span-2 px-3 text-lg sm:text-lg md:text-xl xl:text-2xl mx-auto md:mr-20 xl:mr-42">
+          <div className="md:col-span-2 px-3 text-lg sm:text-lg md:text-xl xl:text-xl mx-auto md:mr-20 xl:mr-42">
             <div className="bg-blue-900 inline-block px-5">
               <p className=" text-yellow-400 font-medium text-center py-3 sm:py-5 md:py-4">
                 About Me
@@ -26,9 +26,8 @@ const About = () => {
               I began my career as a Certified Public Accountant (CPA) in the Philippines and have spent the past 8 years
               involved in data and business intelligence analytics for internal auditing for 8 years. I'm passionate about 
               using <strong>Power BI</strong> and <strong>Python</strong> for data modelling and visualization. Throughout my time as an internal auditor in a large business, 
-              I have gained business and IT acumen, making sense of structured and unstructured data, and collaboration skills. 
-              I'm a lifelong learner, self-starter, advocates the power
-              of teamwork and a little bit of a geek now and then.
+              I have gained business and IT acumen, extracting insights from data, and collaboration skills. 
+              I'm a lifelong learner, self-starter, advocates the power of teamwork and a little bit of a geek now and then.
             </p>
           </div>
         </div>

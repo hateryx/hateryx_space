@@ -1,4 +1,4 @@
-import { NavBar, Hero, Portfolio, About, Careers, Skillsets, Contact } from "./components";
+import { NavBar, Hero, Portfolio, About, Careers, Contact } from "./components";
 
 function App() {
   return (
