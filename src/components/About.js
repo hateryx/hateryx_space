@@ -17,14 +17,15 @@ const About = () => {
             </div>
             <p className="font-light py-5 leading-loose text-black-800">
               Hi, I'm a Data and Business Intelligence Analyst and Full Stack Web Developer enthusiast. As a web developer,
-              I've built skillsets on using <strong>React JS</strong> and <strong>Tailwind CSS</strong> for the front-end. 
-              I'm passionate about <strong>data visualization</strong> using Power BI.
+              I've built web applications that have demonstrated my skillsets in using <strong>React, Next.js</strong> {" "}
+              and <strong>Tailwind</strong> in the front-end, as well as <strong>Python</strong> and <strong>SQLite</strong> {" "}
+              for the back-end.
             </p>
             <p className="font-light py-5 leading-loose text-gray-800">
-              I started my career as a Certified Public Accountant (CPA) in the
-              Philippines and have been engaging with data and business intelligence analytics for internal auditing for 8 years.
-              I've accumulated my business and IT acumen, cybersecurity, collaboration skills in a large business as internal
-              auditor. I'm a lifelong learner, self-starter, advocates the power
+              I started my career as a Certified Public Accountant (CPA) in the Philippines and have been engaging with 
+              data and business intelligence analytics for internal auditing for 8 years. I'm passionate about using <strong>Power BI</strong>
+              for data modelling and visualization. I've accumulated my business and IT acumen, cybersecurity, collaboration skills in a 
+              large business as internal auditor. I'm a lifelong learner, self-starter, advocates the power
               of teamwork and a little bit of a geek now and then.
             </p>
           </div>
