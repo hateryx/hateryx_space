@@ -10,7 +10,7 @@ const About = () => {
           <div className="px-6 md:px-0 mx-auto">
             <img className="rounded-full w-4/5 ml-10" src={hero}></img>
           </div>
-          <div className="md:col-span-2 px-3 text-lg sm:text-lg md:text-xl xl:text-xl mx-auto md:mr-20 xl:mr-42">
+          <div className="md:col-span-2 px-3 text-lg sm:text-lg xl:text-xl mx-auto md:mr-20 xl:mr-42">
             <div className="bg-blue-900 inline-block px-5">
               <p className=" text-yellow-400 font-medium text-center py-3 sm:py-5 md:py-4">
                 About Me
