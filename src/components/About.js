@@ -25,7 +25,9 @@ const About = () => {
             <p className="font-light py-5 leading-loose text-gray-800">
               I began my career as a Certified Public Accountant (CPA) in the Philippines and have spent the past 8 years
               involved in data and business intelligence analytics for internal auditing for 8 years. I'm passionate about 
-              using <strong>Power BI</strong> and <strong>Python</strong> for data modelling and visualization. Throughout my time as an internal auditor in a large business, 
+              using <strong>SQL</strong> for data querying and manipulation, <strong>Power BI</strong> and <strong>Python</strong> 
+              for data modelling and visualization. 
+              Throughout my time as an internal auditor in a large business, 
               I have gained business and IT acumen, extracting insights from data, and collaboration skills. 
               I'm a lifelong learner, self-starter, advocates the power of teamwork and a little bit of a geek now and then.
             </p>
