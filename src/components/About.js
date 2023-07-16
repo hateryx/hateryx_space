@@ -6,7 +6,8 @@ const About = () => {
     <div id="about" className="relative bg-white z-9">
       <section className="flex flex-col items-center justify-center min-h-screen py-16 mx-2">
         <div className="container grid md:grid-cols-3 gap-8 items-center">
-          <div className="px-6 md:px-0 mx-auto xl:ml-50">
+          
+          <div className="px-6 md:px-0 mx-auto">
             <img className="rounded-full w-full" src={hero}></img>
           </div>
           <div className="md:col-span-2 px-3 text-lg sm:text-lg md:text-xl xl:text-2xl mx-auto md:mr-20 xl:mr-42">
@@ -22,10 +23,10 @@ const About = () => {
               for the back-end.
             </p>
             <p className="font-light py-5 leading-loose text-gray-800">
-              I started my career as a Certified Public Accountant (CPA) in the Philippines and have been engaging with 
-              data and business intelligence analytics for internal auditing for 8 years. I'm passionate about using <strong>Power BI</strong>
-              for data modelling and visualization. I've accumulated my business and IT acumen, cybersecurity, collaboration skills in a 
-              large business as internal auditor. I'm a lifelong learner, self-starter, advocates the power
+              I began my career as a Certified Public Accountant (CPA) in the Philippines and have spent the past 8 years
+              involved in data and business intelligence analytics for internal auditing for 8 years. I'm passionate about 
+              using <strong>Power BI</strong> and <strong>Python</strong> for data modelling and visualization. Throughout my time as an internal auditor in a large business, 
+              I have gained business and IT acumen, cybersecurity, and collaboration skills. I'm a lifelong learner, self-starter, advocates the power
               of teamwork and a little bit of a geek now and then.
             </p>
           </div>
