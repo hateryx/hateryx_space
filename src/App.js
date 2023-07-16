@@ -7,7 +7,6 @@ function App() {
       <Hero />
       <About />
       <Careers />
-      <Skillsets />
       <Portfolio />
       <Contact />
     </div>
