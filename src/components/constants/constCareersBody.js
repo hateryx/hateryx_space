@@ -1,7 +1,7 @@
 const constCareersBody = [
   {
     position: "Full Stack Web Developer",
-    company: "Enthusiast / Freelancer (Part Time)",
+    company: "Enthusiast / Contributor/ Freelancer (Part Time)",
     location: "Philippines",
     period: "May 2022 - Current",
     description:
@@ -13,7 +13,7 @@ const constCareersBody = [
     location: "Philippines",
     period: "December 2022 - June 2023",
     description:
-      "I have developed automated processes for transforming large datasets extracted from system applications using SQL, R Studio, and Python libraries, and then analyzed it with the help of Power BI for visualization to share insights and anomalies for endorsement to auditors for further continuous auditing and investigation.",
+      "I have developed automated processes for transforming large datasets extracted from system applications using SQL, R Studio, and Python libraries, and then analyzed it with the help of Power BI for data visualization to share insights and anomalies for endorsement to auditors for further continuous auditing and investigation.",
   },
   {
     position: "Section Head - IT Audit",
