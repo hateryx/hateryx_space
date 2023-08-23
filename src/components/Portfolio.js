@@ -36,7 +36,7 @@ const Portfolio = () => {
       project: "Investopia",
       picture: portpic_investopia,
       description:
-        "Practice stock trading and portfolio management thru this app. Inspired from CS50, the app enables the user to see his/her equities value, real-time profit/loss and transaction history.",
+        "Practice stock trading and portfolio management thru this app. The app enables the user to see his/her equities value, real-time profit/loss and transaction history.",
       tech: [
         { icon_source: htmlcss, lang: "HTML CSS" },
         { icon_source: python, lang: "Python" },
@@ -48,7 +48,7 @@ const Portfolio = () => {
       project: "Next AI Psych",
       picture: portpic_nextaipsych,
       description:
-        "Get to know more of yourself by answering questions and let the power of Open AI's Chat GPT 3.5 Turbo Model to give you an objective glance of your personality by its assessment of your answers.",
+        "Get to know more of yourself by answering questions and let the power of Open AI's Chat GPT 3.5 to give you an objective glance of your personality.",
       tech: [
         { icon_source: reactjs, lang: "ReactJS" },
         { icon_source: nextjs, lang: "NextJS" },
@@ -83,7 +83,7 @@ const Portfolio = () => {
       project: "Hangman Game",
       picture: portpic_hangman,
       description:
-        "A classic word guessing game built using vanilla HTML, CSS and Javascript. The player is given a question as hint for the answer, which are randomly generated therefrom using API Ninjas.",
+        "A classic word guessing game built using vanilla HTML, CSS and Javascript. The player is given a question as hint for the answer, which are randomly generated from API Ninjas.",
       tech: [
         { icon_source: htmlcss, lang: "HTML CSS" },
         { icon_source: javascript, lang: "Javascript" },
@@ -195,7 +195,7 @@ const Portfolio = () => {
                     ></img>
                   </div>
                   <div className="p-4">
-                    <div className="text-gray-600 text-justify font-light py-2 h-[80px]">
+                    <div className="text-gray-600 text-justify font-light py-2 min-h-30">
                       {description}
                     </div>
                     <div className="bg-blue-900 rounded-t-lg my-5">
