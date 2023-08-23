@@ -20,10 +20,10 @@ const Hero = () => {
             <p className="font-light mb-8 text-left tracking-wide pl-4 pt-3 text-xl md:text-2xl lg:text-3xl">
               I'm a{" "}
               <strong className="text-blue-900">
-                Full Stack Web Developer
+                Software Engineer
               </strong>
-              , <strong className="text-blue-800">Data Analyst</strong> and{" "}
-              <strong className="text-blue-700">IT Auditor</strong>
+              , <strong className="text-blue-800">Data Enthusiast</strong><br/> and{" "}
+              former <strong className="text-blue-700">IT Auditor</strong>
             </p>
           </div>
           <img src={hero} alt="hero" className="w-full mx-auto max-w-sm"></img>

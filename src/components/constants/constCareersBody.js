@@ -1,11 +1,19 @@
 const constCareersBody = [
   {
+    position: "Software Engineer",
+    company: "Atlasopen",
+    location: "Australia",
+    period: "August 2023 - Current",
+    description:
+      "On-going delivery of features for a Software-as-a-Service app using React JS, Survey JS, Sequelize and Azure resources (SQL and Azure functions).",
+  },
+  {
     position: "Full Stack Web Developer",
     company: "Enthusiast / Contributor/ Freelancer (Part Time)",
     location: "Philippines",
     period: "May 2022 - Current",
     description:
-      "I have built and deployed multiple web applications, including an AI-powered web app and a full stack web app. Additionally, I have contributed to open-source projects on GitHub, delivering a feature to the Philippine Travel Level Map app. As part of my ongoing internship at Netzwelt PH, I have been enhancing my skills in database design using MySQL, C#, and overall software development expertise.",
+      "Built and deployed various software applications, including an AI-powered web app and a full stack web app. Additionally, I have contributed to open-source projects on GitHub, delivering a feature to the Philippine Travel Level Map app. As part of my ongoing internship at Netzwelt PH, I have been enhancing my skills in database design using MySQL, C#, and overall software development expertise.",
   },
   {
     position: "Continuous Audit & Data Analytics Lead",

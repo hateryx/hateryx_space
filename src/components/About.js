@@ -17,7 +17,7 @@ const About = () => {
               </p>
             </div>
             <p className="font-light py-5 leading-loose text-black-800">
-              Hi, I'm a Data and Business Intelligence Analyst and Full Stack Web Developer enthusiast. As a web developer,
+              Hi, I'm a Software Engineer . As an enthusiast of building and tinkering software initiatives,
               I've built web applications that have demonstrated my skillsets in using <strong>React, Next.js</strong> {" "}
               and <strong>Tailwind</strong> in the front-end, as well as <strong>Python</strong> and <strong>SQLite</strong> {" "}
               for the back-end.
