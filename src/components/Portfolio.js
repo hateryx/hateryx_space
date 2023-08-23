@@ -99,6 +99,8 @@ const Portfolio = () => {
     slidesToShow: 2,
     infinite: true,
     slidesToScroll: 1,
+    arrows: true,
+    accessibility: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -169,7 +171,7 @@ const Portfolio = () => {
               which_project={pickProject}
             />
           )}
-          <div className="grid grid-cols-1 content-around items-center container">
+          <div className="grid grid-cols-1 content-around items-center container space-x-10">
             <Slider {...SliderSettings}>
             {content.map(({ project, picture, description, tech }, index) => (
               <div
