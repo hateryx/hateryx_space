@@ -193,9 +193,9 @@ const Portfolio = () => {
                     ></img>
                   </div>
                   <div className="p-4">
-                    <p className="text-gray-600 text-justify font-light py-2">
+                    <div className="text-gray-600 text-justify font-light py-2 h-[80px]">
                       {description}
-                    </p>
+                    </div>
                     <div className="bg-blue-900 rounded-t-lg my-5">
                       <div className="p-2 bg-yellow-400 rounded-t-lg">
                         <p className="text-gray-600 text-justify font-semibold">
