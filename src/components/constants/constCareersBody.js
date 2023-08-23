@@ -5,7 +5,7 @@ const constCareersBody = [
     location: "Australia",
     period: "August 2023 - Current",
     description:
-      "On-going delivery of features for a Software-as-a-Service app using React JS, Survey JS, Sequelize and Azure resources (SQL and Azure functions).",
+      "On-going delivery of features for a Software-as-a-Service app using React JS, Survey JS, Sequelize and Azure cloud resources (MySQL DB and Azure functions for calling API).",
   },
   {
     position: "Full Stack Web Developer",
@@ -13,7 +13,7 @@ const constCareersBody = [
     location: "Philippines",
     period: "May 2022 - Current",
     description:
-      "Built and deployed various software applications, including an AI-powered web app and a full stack web app. Additionally, I have contributed to open-source projects on GitHub, delivering a feature to the Philippine Travel Level Map app. As part of my ongoing internship at Netzwelt PH, I have been enhancing my skills in database design using MySQL, C#, and overall software development expertise.",
+      "Built and deployed various personal software applications, including an AI-powered web app and a full stack web app using React and Next JS, Python (Fast API and Flask) and SQL. Delivered features for a social finance token (Web 3.0) app using React JS. Gained fundamental skills on database design from Netzwelt PH.",
   },
   {
     position: "Continuous Audit & Data Analytics Lead",
@@ -21,7 +21,7 @@ const constCareersBody = [
     location: "Philippines",
     period: "December 2022 - June 2023",
     description:
-      "I have developed automated processes for transforming large datasets extracted from system applications using SQL, R Studio, and Python libraries, and then analyzed it with the help of Power BI for data visualization to share insights and anomalies for endorsement to auditors for further continuous auditing and investigation.",
+      "Delivered automated processes for transforming large datasets extracted from system apps using SQL and Python libraries, and then loaded it through BI tool (Power BI) for data visualization to share insights with auditors for further continuous auditing and investigation.",
   },
   {
     position: "Section Head - IT Audit",
@@ -29,7 +29,7 @@ const constCareersBody = [
     location: "Philippines",
     period: "March 2022 - November 2022",
     description:
-      "As the supervising IT auditor, I lead audits of IT applications to ensure their compliance with the bank's standards for the System Development Life Cycle (SDLC), IT security (including application security controls and addressing vulnerability assessment findings), and relevant IT regulations specific to banks, such as IT risk management, IT governance, and business continuity standards. I document the audit findings and issues in a comprehensive report, which is then released to senior management and the board audit committee.",
+      "Lead audits of system applications to ensure their compliance with the bank's standards for the System Development Life Cycle (SDLC), IT security (including application security controls and addressing vulnerability assessment findings), and relevant IT regulations specific to banks, such as IT risk management, IT governance, and business continuity standards. I document the audit findings and issues in a comprehensive report, which is then released to senior management and the board audit committee.",
   },
   {
     position:
@@ -38,7 +38,7 @@ const constCareersBody = [
     location: "Philippines",
     period: "January 2020 - March 2022",
     description:
-      "Supervised a team of up to six audit officers, supervising the delivery of audit engagements for branch banking and lending offices, as well as business units with data-driven processes such as Credit, Market and Liquidity Risk Management, Corporate Planning, Credit Collections, and Compliance (AML) among others. In my role, I also audit information system-related processes such as IT governance, business continuity, and data privacy processes",
+      "Primarily in-charge of auditing IT applications and IT-related processes such as IT governance, business continuity, and data privacy processes. Supervised a team of up to six audit officers to deliver agile audit engagements of branch banking and lending offices, as well as business units with data-driven processes such as Credit, Market and Liquidity Risk Management, Corporate Planning, Credit Collections, and Compliance (AML) among others.",
   },
 ];
 
