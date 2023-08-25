@@ -96,11 +96,13 @@ const Portfolio = () => {
     className: "center",
     dots: true,
     speed: 400,
+    autoplaySpeed: 3000,
     slidesToShow: 2,
     infinite: true,
     slidesToScroll: 1,
     arrows: true,
     accessibility: true,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -108,7 +110,6 @@ const Portfolio = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
         }
       },
       {
@@ -117,7 +118,6 @@ const Portfolio = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          dots: true
         }
       },
       {
@@ -172,7 +172,7 @@ const Portfolio = () => {
             />
           )}
           <div className="grid grid-cols-1 content-around items-center container space-x-10">
-            <Slider {...SliderSettings}>
+          <Slider {...SliderSettings}>
             {content.map(({ project, picture, description, tech }, index) => (
               <div
                 id={project}
