@@ -30,7 +30,7 @@ import openCard from "../assets/images/openCard.svg";
 import ProjectCard from "./ProjectCard";
 
 const Portfolio = () => {
-  
+
   const content = [
     {
       project: "Investopia",
@@ -91,6 +91,19 @@ const Portfolio = () => {
       ],
     },
   ];
+
+  const nextItem = {
+    project: "Next Angel Sue",
+    picture: portpic_hangman,
+    description:
+      "A classic word guessing game built using vanilla HTML, CSS and Javascript. The player is given a question as hint for the answer, which are randomly generated from API Ninjas.",
+    tech: [
+      { icon_source: reactjs, lang: "ReactJS" },
+      { icon_source: expressjs, lang: "Material UI" }
+    ]
+  }
+
+
 
   const SliderSettings = {
     className: "center",
@@ -172,56 +185,56 @@ const Portfolio = () => {
             />
           )}
           <div className="grid grid-cols-1 content-around items-center container space-x-10">
-          <Slider {...SliderSettings}>
-            {content.map(({ project, picture, description, tech }, index) => (
-              <div
-                id={project}
-                key={index}
-                onClick={clickHandler}
-                className="bg-white rounded-t-lg flex items-center px-3 sm:px-3 md:px-0 lg:px-0 xl:px-0 z-8" 
-              >
-                <div className="w-full max-w-m border-2 shadow-md rounded-lg">
-                  <div className="w-full rounded-t-lg bg-blue-900 h-10 pl-2 flex items-center">
-                    <img src={openCard} className="h-6 w-6"></img>
-                  </div>
-                  <h3 className="mx-4 my-3 py-2 text-center text-xl font-bold text-blue-800 border-y-2 border-blue-700">
+            <Slider {...SliderSettings}>
+              {content.map(({ project, picture, description, tech }, index) => (
+                <div
+                  id={project}
+                  key={index}
+                  onClick={clickHandler}
+                  className="bg-white rounded-t-lg flex items-center px-3 sm:px-3 md:px-0 lg:px-0 xl:px-0 z-8"
+                >
+                  <div className="w-full max-w-m border-2 shadow-md rounded-lg">
+                    <div className="w-full rounded-t-lg bg-blue-900 h-10 pl-2 flex items-center">
+                      <img src={openCard} className="h-6 w-6"></img>
+                    </div>
+                    <h3 className="mx-4 my-3 py-2 text-center text-xl font-bold text-blue-800 border-y-2 border-blue-700">
                       {project}
                     </h3>
-                  <div className="portpic-window items-center flex justify-center h-[500px]">
-                    <img
-                      src={picture}
-                      alt="Project 1"
-                      className="p-1"
-                    ></img>
-                  </div>
-                  <div className="p-4">
-                    <div className="text-gray-600 text-justify font-light py-2 min-h-30">
-                      {description}
+                    <div className="portpic-window items-center flex justify-center h-[500px]">
+                      <img
+                        src={picture}
+                        alt="Project 1"
+                        className="p-1"
+                      ></img>
                     </div>
-                    <div className="bg-blue-900 rounded-t-lg my-5">
-                      <div className="p-2 bg-yellow-400 rounded-t-lg">
-                        <p className="text-gray-600 text-justify font-semibold">
-                          Tech/Libraries Used:
-                        </p>
+                    <div className="p-4">
+                      <div className="text-gray-600 text-justify font-light py-2 min-h-30">
+                        {description}
                       </div>
-                      <div className="px-3 py-4 pb-2 grid grid-cols-2 items-center gap-2">
-                        {tech.map(({ icon_source, lang }, index) => (
-                          <div
-                            key={index}
-                            className="bg-gray-200 rounded-full px-1 py-2 font-semibold text-gray-700 mb-3 text-xs items-center flex w-full gap-3"
-                          >
-                            <div className="h-[50px] w-[48px]">
-                            <img src={icon_source} className="w-full min-h-full object-cover items-center"></img>
+                      <div className="bg-blue-900 rounded-t-lg my-5">
+                        <div className="p-2 bg-yellow-400 rounded-t-lg">
+                          <p className="text-gray-600 text-justify font-semibold">
+                            Tech/Libraries Used:
+                          </p>
+                        </div>
+                        <div className="px-3 py-4 pb-2 grid grid-cols-2 items-center gap-2">
+                          {tech.map(({ icon_source, lang }, index) => (
+                            <div
+                              key={index}
+                              className="bg-gray-200 rounded-full px-1 py-2 font-semibold text-gray-700 mb-3 text-xs items-center flex w-full gap-3"
+                            >
+                              <div className="h-[50px] w-[48px]">
+                                <img src={icon_source} className="w-full min-h-full object-cover items-center"></img>
+                              </div>
+                              <div key={index}>{lang}</div>
                             </div>
-                            <div key={index}>{lang}</div>
-                          </div>
-                        ))}
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
             </Slider>
           </div>
         </div>
